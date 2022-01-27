@@ -8,19 +8,21 @@ import { HomeComponent } from './views/home/home.component';
 import { CategoryListComponent } from './components/category-list/category-list.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import { SearchBarComponent } from './components/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

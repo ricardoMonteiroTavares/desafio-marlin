@@ -8,7 +8,7 @@ import { NewsModel } from '../models/news.model';
 })
 
 /** Serviço que realiza a comunicação com a API externa para a busca de notícias */
-export class NewsServiceService {
+export class NewsService {
   baseUrl = "https://5cf9ae9df26e8c00146cff8d.mockapi.io/api/v1/post/";
   
   httpOptions = {

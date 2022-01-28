@@ -1,7 +1,7 @@
-export class NewsPreviewModel {
+export class NewsModel {
     title!: String;
     image!: String;
     body!: String;
-    id!: number;
+    id!: String;
     dateTime!: String;
 }

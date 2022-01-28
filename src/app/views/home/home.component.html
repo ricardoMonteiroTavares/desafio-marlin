@@ -2,7 +2,7 @@
     <div class="left_col">
         <p>Coluna esquerda</p>
         <mat-grid-list cols="2" gutterSize="19px" rowHeight="300px">
-            <mat-grid-tile *ngFor="let news of newsList"><app-card></app-card></mat-grid-tile>            
+            <mat-grid-tile *ngFor="let news of newsList"><app-card [news]="news"></app-card></mat-grid-tile>            
           </mat-grid-list>
     </div>
     <div class="right_col">

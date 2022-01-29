@@ -15,6 +15,7 @@ import { SearchBarComponent } from './core/components/search-bar/search-bar.comp
 import { CardComponent } from './core/components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FullNewsComponent } from './views/full-news/full-news.component';
+import { CreateNewsComponent } from './views/create-news/create-news.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FullNewsComponent } from './views/full-news/full-news.component';
     CategoryListComponent,
     SearchBarComponent,
     CardComponent,
-    FullNewsComponent
+    FullNewsComponent,
+    CreateNewsComponent
   ],
   imports: [
     HttpClientModule,

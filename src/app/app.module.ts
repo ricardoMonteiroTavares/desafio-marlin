@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { SearchBarComponent } from './core/components/search-bar/search-bar.component';
 import { CardComponent } from './core/components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FullNewsComponent } from './views/full-news/full-news.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     CategoryListComponent,
     SearchBarComponent,
-    CardComponent
+    CardComponent,
+    FullNewsComponent
   ],
   imports: [
     HttpClientModule,

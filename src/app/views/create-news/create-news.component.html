@@ -8,7 +8,18 @@
                Mande sua notícia
             </mat-card-title>
             <mat-card-content>
-             <!--Formulário-->
+              <mat-form-field appearance="fill">
+                <mat-label>Título</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Url da imagem</mat-label>
+                <input matInput>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Conteúdo</mat-label>
+                <textarea matInput></textarea>
+              </mat-form-field>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button>Enviar</button>      
@@ -18,8 +29,6 @@
 
     </div>
     <div class="right_col">
-        <p>Coluna direita</p>
-        <app-category-list></app-category-list>
-        <app-search-bar></app-search-bar>
+      <app-right-col></app-right-col>
     </div>
 </div>

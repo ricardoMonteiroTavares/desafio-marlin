@@ -11,11 +11,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { SearchBarComponent } from './core/components/search-bar/search-bar.component';
 import { CardComponent } from './core/components/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FullNewsComponent } from './views/full-news/full-news.component';
 import { CreateNewsComponent } from './views/create-news/create-news.component';
+import { RightColComponent } from './core/components/right-col/right-col.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { CreateNewsComponent } from './views/create-news/create-news.component';
     SearchBarComponent,
     CardComponent,
     FullNewsComponent,
-    CreateNewsComponent
+    CreateNewsComponent,
+    RightColComponent
   ],
   imports: [
     HttpClientModule,
@@ -36,7 +40,8 @@ import { CreateNewsComponent } from './views/create-news/create-news.component';
     MatListModule,
     MatCardModule,
     MatGridListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

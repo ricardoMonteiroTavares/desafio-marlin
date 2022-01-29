@@ -1,7 +1,7 @@
 export class NewsModel {
-    title!: String;
-    image!: String;
-    body!: String;
-    id!: String;
-    dateTime!: String;
+    title!: string;
+    image!: string;
+    body!: string;
+    id!: string;
+    createdAt!: string;
 }

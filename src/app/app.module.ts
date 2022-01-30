@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FullNewsComponent } from './views/full-news/full-news.component';
 import { CreateNewsComponent } from './views/create-news/create-news.component';
 import { RightColComponent } from './core/components/right-col/right-col.component';
+import { HeaderComponent } from './core/components/header/header.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { RightColComponent } from './core/components/right-col/right-col.compone
     CardComponent,
     FullNewsComponent,
     CreateNewsComponent,
-    RightColComponent
+    RightColComponent,
+    HeaderComponent
   ],
   imports: [
     HttpClientModule,

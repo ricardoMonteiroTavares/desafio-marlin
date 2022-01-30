@@ -1,10 +1,8 @@
 <app-header></app-header>
 <div class="container">    
-    <div class="left_col">
-        <p>Coluna esquerda</p>     
+    <div class="left_col">            
         <mat-card>    
-            <img class="news-img" mat-card-image src="{{news.image}}" alt="Capa da notícia {{news.title}}">
-            <!-- <mat-card-content> -->
+            <img class="news-img" mat-card-image src="{{news.image}}" alt="Capa da notícia {{news.title}}">            
                 <mat-card-title>
                    {{news.title}}
                 </mat-card-title>
@@ -13,8 +11,7 @@
                 </mat-card-subtitle>
               <mat-card-content>
                 {{news.body}}
-              </mat-card-content>
-            <!-- </mat-card-content> -->            
+              </mat-card-content>            
           </mat-card>           
     </div>
     <div class="right_col">

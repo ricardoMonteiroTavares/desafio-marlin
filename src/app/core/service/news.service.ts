@@ -34,4 +34,12 @@ export class NewsService {
   public getNews(id: String): Observable<NewsModel>  {
     return this.httpClient.get<NewsModel>(this.baseUrl + id);
   }
+
+  /**
+   * Publica uma nova notícia
+   * @param news: Nova notícia
+   */
+  public postNews(news: any): Observable<NewsModel> {
+    return this.httpClient.post<any>(this.baseUrl, news, this.httpOptions);
+  }
 }

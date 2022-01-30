@@ -20,6 +20,7 @@ import { CreateNewsComponent } from './views/create-news/create-news.component';
 import { RightColComponent } from './core/components/right-col/right-col.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -45,7 +46,9 @@ import { MatInputModule } from '@angular/material/input';
     MatGridListModule,
     MatButtonModule,
     MatFormFieldModule,    
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

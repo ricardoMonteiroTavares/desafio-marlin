@@ -4,7 +4,7 @@ import { NewsModel } from '../../models/news.model';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.sass']
+  styleUrls: ['./card.component.sass', '../../styles/button.sass']
 })
 export class CardComponent implements OnInit {
 

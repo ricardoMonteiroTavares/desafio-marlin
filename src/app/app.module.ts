@@ -19,6 +19,7 @@ import { FullNewsComponent } from './views/full-news/full-news.component';
 import { CreateNewsComponent } from './views/create-news/create-news.component';
 import { RightColComponent } from './core/components/right-col/right-col.component';
 import { HeaderComponent } from './core/components/header/header.component';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { HeaderComponent } from './core/components/header/header.component';
     MatCardModule,
     MatGridListModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,    
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

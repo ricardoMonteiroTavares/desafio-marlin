@@ -23,6 +23,7 @@ import { HeaderComponent } from './core/components/header/header.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridComponent } from './core/components/grid/grid.component';
+import { SearchPageComponent } from './views/search-page/search-page.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { GridComponent } from './core/components/grid/grid.component';
     CreateNewsComponent,
     RightColComponent,
     HeaderComponent,
-    GridComponent
+    GridComponent,
+    SearchPageComponent
   ],
   imports: [
     HttpClientModule,

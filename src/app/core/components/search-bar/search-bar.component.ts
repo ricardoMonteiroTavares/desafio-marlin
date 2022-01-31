@@ -38,4 +38,11 @@ export class SearchBarComponent implements OnInit {
     }
   }
 
+  handleKeyUp(e: any){
+    if(e.keyCode === 13){
+      e.preventDefault();
+       this.clickHandler();
+    }
+ }
+
 }

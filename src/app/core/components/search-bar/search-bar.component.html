@@ -1,7 +1,7 @@
 <div>
     <h4>Procurando alguma notícia?</h4>
     <div id="search" [formGroup]="form">
-        <input id="in" type="search" name="search" placeholder="Pesquisar por..." formControlName="value">    
+        <input id="in" type="search" name="search" placeholder="Pesquisar por..." formControlName="value" (keyup)="handleKeyUp($event)">    
         <button mat-icon-button (click)="clickHandler()"><mat-icon svgIcon="search" aria-hidden="false" aria-label="Ícone de busca de notícias"></mat-icon></button>
     </div>
 </div>

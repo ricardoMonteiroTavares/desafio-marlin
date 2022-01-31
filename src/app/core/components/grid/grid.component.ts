@@ -1,4 +1,4 @@
-import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { NewsModel } from '../../models/news.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { NewsModel } from '../../models/news.model';
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.sass']
 })
-export class GridComponent {
+export class GridComponent implements AfterViewInit, OnInit {
 
   @ViewChild('grid') 
   gridElement!: ElementRef<HTMLDivElement>;
@@ -17,6 +17,9 @@ export class GridComponent {
   colsNumber!: number;
 
   constructor() { }
+  ngOnInit(): void {
+    this.colsNumber = 1;
+  }
 
   ngAfterViewInit(): void {
     this.colsNumber = this.calculateCols(this.gridElement.nativeElement.offsetWidth);    

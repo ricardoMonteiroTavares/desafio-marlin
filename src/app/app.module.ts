@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SearchBarComponent } from './core/components/search-bar/search-bar.component';
 import { CardComponent } from './core/components/card/card.component';
@@ -50,7 +51,8 @@ import { GridComponent } from './core/components/grid/grid.component';
     MatFormFieldModule,    
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

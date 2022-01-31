@@ -25,7 +25,7 @@ export class SearchPageComponent implements OnInit {
   }
 
   private filterMethod(value: NewsModel, searchTerm: string) : boolean {
-    return value.title.includes(searchTerm);
+    return value.title.toLowerCase().includes(searchTerm.toLowerCase());
   }
 
 }

@@ -1,6 +1,6 @@
 <div class="header">
     <div>
-        <h2>{{title}}</h2>
+        <h2 (click)="clickHandler($event)" [style]="cursor">{{title}}</h2>
         <h4>{{subtitle}}</h4>
     </div>
 </div>

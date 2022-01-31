@@ -24,6 +24,8 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GridComponent } from './core/components/grid/grid.component';
 import { SearchPageComponent } from './views/search-page/search-page.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { SnackbarComponent } from './core/components/snackbar/snackbar.component';
 
 
 @NgModule({
@@ -38,7 +40,8 @@ import { SearchPageComponent } from './views/search-page/search-page.component';
     RightColComponent,
     HeaderComponent,
     GridComponent,
-    SearchPageComponent
+    SearchPageComponent,
+    SnackbarComponent
   ],
   imports: [
     HttpClientModule,
@@ -54,7 +57,8 @@ import { SearchPageComponent } from './views/search-page/search-page.component';
     MatInputModule,
     ReactiveFormsModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

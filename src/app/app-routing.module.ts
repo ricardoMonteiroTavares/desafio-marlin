@@ -23,6 +23,11 @@ const routes: Routes = [
     component: SearchPageComponent,    
     runGuardsAndResolvers: "always",
   },
+  {
+    path: '**',
+    redirectTo: '', 
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CreateNewsComponent } from './views/create-news/create-news.component';
 import { FullNewsComponent } from './views/full-news/full-news.component';
 import { HomeComponent } from './views/home/home.component';
+import { SearchPageComponent } from './views/search-page/search-page.component';
 
 const routes: Routes = [
   {
@@ -19,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'search/:value',
-    component: FullNewsComponent
+    component: SearchPageComponent
   },
 ];
 

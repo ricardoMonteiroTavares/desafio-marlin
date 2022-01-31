@@ -13,37 +13,43 @@ export class GridComponent implements AfterViewInit, OnInit, OnChanges {
 
   @Input() newsList!: NewsModel[];
   private newsLength!: number;
+  private width!: number;
   private _gutterSize: number = 20;
   colsNumber!: number;
 
   constructor() { }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(typeof changes["newsList"]["currentValue"] == 'undefined'){
+    if(typeof changes["newsList"]["currentValue"] === 'undefined'){
       this.newsLength = 1;
     }else{
       this.newsLength = changes["newsList"]["currentValue"].length;
-    }    
+    } 
+    this.colsNumber = this.calculateCols(this.width);     
   }
+  
   ngOnInit(): void {
     this.colsNumber = 1;    
     this.newsLength = 1;
+    this.width = 0;
   }
 
   ngAfterViewInit(): void {
-    let result = this.calculateCols(this.gridElement.nativeElement.offsetWidth);     
-    this.colsNumber = (this.newsLength >= result)? result : this.newsLength;
+    this.width = this.gridElement.nativeElement.offsetWidth;
+    this.colsNumber = this.calculateCols(this.width);     
   }
 
   handleSize(event: any): void {      
     event.preventDefault();
-    this.colsNumber = this.calculateCols(this.gridElement.nativeElement.offsetWidth);    
+    this.width = this.gridElement.nativeElement.offsetWidth;
+    this.colsNumber = this.calculateCols(this.width);         
   }
 
 
   private calculateCols(width: number): number {
     let half_gutter = this._gutterSize / 2;    
-    return Math.floor(width / (360 + half_gutter));    
+    let result = Math.floor(width / (360 + half_gutter));    
+    return (this.newsLength >= result)? result : this.newsLength;
   }
   
   public get gutterSize() : string {

@@ -1,12 +1,16 @@
 <mat-card class="card">    
-  <img class="card-img" mat-card-image src="{{news.image}}" alt="Capa da notícia {{news.title}}">    
-  <mat-card-title>
+  <img class="card-img" mat-card-image src="{{news.image}}" alt="Capa da notícia {{news.title}}">  
+  <mat-card-content class="content">
+  <mat-card-title class="title">
       {{news.title}}
   </mat-card-title>
-  <mat-card-subtitle>
-    {{news.body.slice(0, ((news.body.length/2) > 200 ) ? 200 : (news.body.length/2)) + "..."}}
+  <mat-card-subtitle class="subtitle">
+    {{news.body.split(".")[0] + "."}}
   </mat-card-subtitle>    
+</mat-card-content>  
+<mat-card-footer class="footer">
   <mat-card-actions>
-    <button mat-button routerLink="/news/{{news.id}}" class="button_flat">Ler Mais</button>      
+    <button mat-button routerLink="/news/{{news.id}}" class="button_flat">Ler mais</button>      
   </mat-card-actions>
+</mat-card-footer>
 </mat-card>

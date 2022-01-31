@@ -10,23 +10,22 @@ import { NewsService } from 'src/app/core/service/news.service';
 })
 export class SearchPageComponent implements OnInit {
 
-  newsList!: NewsModel[];
+  newsList: NewsModel[] = [];
   searchTerm!: string;
 
   constructor(public router:Router, private service : NewsService) { }
 
   ngOnInit(): void {
     let list = this.router.url.split('/');
-    this.searchTerm = list[list.length - 1];
+    this.searchTerm = list[list.length - 1];    
     this.service.getNewsPreview().subscribe(data => {  
-      let result = data.filter(this.filterMethod);   
-      this.newsList = result;
-      console.log(this.newsList);
+      let result = data.filter(value => this.filterMethod(value,this.searchTerm));   
+      this.newsList = result;      
     });
   }
 
-  private filterMethod(value: NewsModel) : boolean {
-    return value.title.includes(this.searchTerm);
+  private filterMethod(value: NewsModel, searchTerm: string) : boolean {
+    return value.title.includes(searchTerm);
   }
 
 }

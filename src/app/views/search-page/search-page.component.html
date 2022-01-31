@@ -1,4 +1,4 @@
-<app-header></app-header>
+<app-header [searchTerm]="searchTerm" [itemsFound]="newsList.length"></app-header>
 <div class="container">    
     <div class="left_col">        
         <app-grid [newsList]="newsList"></app-grid>

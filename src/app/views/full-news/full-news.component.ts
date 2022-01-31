@@ -19,10 +19,8 @@ export class FullNewsComponent implements OnInit {
     let list = this.router.url.split('/');
     let id = list[list.length - 1];
     this.service.getNews(id).subscribe(data => {     
-      this.news = data;
-      console.log(this.news);
-    });
-    console.log(id);
+      this.news = data;      
+    });    
   }
 
   getDate(){

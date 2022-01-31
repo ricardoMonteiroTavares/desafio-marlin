@@ -1,9 +1,7 @@
 <app-header></app-header>
 <div class="container">    
     <div class="left_col">        
-        <mat-grid-list cols="2" gutterSize="19px" rowHeight="400px">
-            <mat-grid-tile *ngFor="let news of newsList"><app-card [news]="news"></app-card></mat-grid-tile>            
-          </mat-grid-list>
+        <app-grid [newsList]="newsList"></app-grid>
     </div>
     <div class="right_col">
         <app-right-col></app-right-col>

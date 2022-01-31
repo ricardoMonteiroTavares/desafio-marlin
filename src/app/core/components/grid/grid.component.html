@@ -1,0 +1,5 @@
+<div #grid (window:resize)="handleSize($event)">
+    <mat-grid-list [cols]="colsNumber" [gutterSize]="gutterSize" rowHeight="400px">
+        <mat-grid-tile *ngFor="let news of newsList"><app-card [news]="news"></app-card></mat-grid-tile>            
+    </mat-grid-list>
+</div>

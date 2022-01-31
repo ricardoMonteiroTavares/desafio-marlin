@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NewsModel } from 'src/app/core/models/news.model';
 import { NewsService } from 'src/app/core/service/news.service';
 
@@ -18,6 +18,5 @@ export class HomeComponent implements OnInit {
       console.log(this.newsList);
     });
   }
-  
 
 }

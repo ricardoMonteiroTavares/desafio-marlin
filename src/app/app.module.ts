@@ -21,6 +21,7 @@ import { RightColComponent } from './core/components/right-col/right-col.compone
 import { HeaderComponent } from './core/components/header/header.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GridComponent } from './core/components/grid/grid.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FullNewsComponent,
     CreateNewsComponent,
     RightColComponent,
-    HeaderComponent
+    HeaderComponent,
+    GridComponent
   ],
   imports: [
     HttpClientModule,

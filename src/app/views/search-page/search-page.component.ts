@@ -8,7 +8,7 @@ import { NewsService } from 'src/app/core/service/news.service';
 @Component({
   selector: 'app-search-page',
   templateUrl: './search-page.component.html',
-  styleUrls: ['./search-page.component.sass']
+  styleUrls: ['./search-page.component.sass', '../../core/styles/container.sass']
 })
 export class SearchPageComponent implements OnInit, OnDestroy {
 

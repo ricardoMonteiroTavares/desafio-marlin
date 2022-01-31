@@ -8,7 +8,7 @@ import { NewsService } from 'src/app/core/service/news.service';
 @Component({
   selector: 'app-full-news',
   templateUrl: './full-news.component.html',
-  styleUrls: ['./full-news.component.sass']
+  styleUrls: ['./full-news.component.sass', '../../core/styles/container.sass']
 })
 export class FullNewsComponent implements OnInit {
 

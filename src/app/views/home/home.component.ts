@@ -7,7 +7,7 @@ import { NewsService } from 'src/app/core/service/news.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+  styleUrls: ['./home.component.sass', '../../core/styles/container.sass']
 })
 export class HomeComponent implements OnInit {
 

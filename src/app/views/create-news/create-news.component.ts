@@ -8,7 +8,7 @@ import { NewsService } from 'src/app/core/service/news.service';
 @Component({
   selector: 'app-create-news',
   templateUrl: './create-news.component.html',
-  styleUrls: ['./create-news.component.sass', '../../core/styles/button.sass']
+  styleUrls: ['./create-news.component.sass', '../../core/styles/button.sass', '../../core/styles/container.sass']
 })
 export class CreateNewsComponent implements OnInit {
   public form!: FormGroup;  

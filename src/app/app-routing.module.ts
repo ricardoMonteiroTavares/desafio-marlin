@@ -16,7 +16,11 @@ const routes: Routes = [
   {
     path: 'create-news',
     component: CreateNewsComponent
-  }
+  },
+  {
+    path: 'search/:value',
+    component: FullNewsComponent
+  },
 ];
 
 @NgModule({
